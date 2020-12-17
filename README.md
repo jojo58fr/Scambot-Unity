@@ -1,2 +1,2 @@
 # Scambot-Unity
-A Unity game
+A Unity 3D with messaging game
