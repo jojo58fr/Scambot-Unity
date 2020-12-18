@@ -29,7 +29,7 @@ public class InteractSystem : MonoBehaviour
         {
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 
-            //Debug.Log($"COUCOU {interactable}");
+            Debug.Log($"COUCOU {interactable}");
 
 
             if (interactable != null)
