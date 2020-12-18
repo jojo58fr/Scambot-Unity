@@ -54,7 +54,7 @@ public class SfxrAudioPlayer : MonoBehaviour {
 		soundSource.clip = null;
 		soundSource.volume = 1f;
 		soundSource.pitch = 1f;
-		soundSource.priority = 128;
+		soundSource.priority = 125;
 		soundSource.Play();
 	}
 

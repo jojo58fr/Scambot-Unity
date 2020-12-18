@@ -77,7 +77,7 @@ namespace MoonSharp.Interpreter
 		/// scenarios, at the expense of losing debug information and error stack traces 
 		/// in all other, more common scenarios. MoonSharp choice is to start performing
 		/// TCOs only after a certain threshold of stack usage is reached - by default
-		/// half the current stack depth (128K entries), thus 64K entries, on either
+		/// half the current stack depth (125K entries), thus 64K entries, on either
 		/// the internal stacks.
 		/// Set this to int.MaxValue to disable TCOs entirely, or to 0 to always have
 		/// TCOs enabled.

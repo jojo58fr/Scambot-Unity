@@ -80,7 +80,7 @@ using UnityEngine.Serialization;
 
         public override Color GetButtonColor() 
         {
-            return new Color32(128, 200, 200, 255);
+            return new Color32(125, 200, 200, 255);
         }
 
         public override bool HasReference(Variable variable)

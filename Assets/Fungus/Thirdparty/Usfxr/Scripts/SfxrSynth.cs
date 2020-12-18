@@ -517,7 +517,7 @@ public class SfxrSynth {
 				if (__bitDepth == 16) {
 					writeShortToBytes(wav, ref bytePos, (short)Math.Round(32000f * bufferSample), Endian.LITTLE_ENDIAN);
 				} else {
-					writeBytes(wav, ref bytePos, new byte[]{ (byte)(Math.Round(bufferSample * 127f) + 128) }, Endian.LITTLE_ENDIAN);
+					writeBytes(wav, ref bytePos, new byte[]{ (byte)(Math.Round(bufferSample * 127f) + 125) }, Endian.LITTLE_ENDIAN);
 				}
                                                 
                 bufferSample = 0f;
@@ -1059,7 +1059,7 @@ public class PinkNumber {
 
 	public PinkNumber() {
 		max_key = 0x1f; // Five bits set
-		range = 128;
+		range = 125;
 		rangeBy5 = (float)range / 5f;
 		key = 0;
 		white_values = new uint[5];
